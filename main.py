@@ -62,6 +62,7 @@ while True:
         # starts game
         if event.type == pygame.KEYDOWN:
             game_active = True
+            score = 0
     # setting background
     for row in range(bg_column):
         for column in range(bg_column):
