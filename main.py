@@ -11,17 +11,17 @@ screen = pygame.display.set_mode((960, 960))
 pygame.display.set_caption("Knight Dungeon")
 knight = Knight(screen)
 clock = pygame.time.Clock()
-bg = pygame.image.load(".gitignore/assets/bg-tile/floor_1.png")
+bg = pygame.image.load("assets/bg-tile/floor_1.png")
 bg = pygame.transform.rotozoom(bg, 0, 3)
 text_font = pygame.font.Font(None, 50)
-death_sound = pygame.mixer.Sound(".gitignore/assets/sounds/got-hit.wav")
+death_sound = pygame.mixer.Sound("assets/sounds/got-hit.wav")
 bg_size = 48
 bg_column = 20
 score = 0
 game_active = False
 channel_1 = pygame.mixer.Channel(1)
 channel_2 = pygame.mixer.Channel(2)
-bg_music = pygame.mixer.Sound(".gitignore/assets/sounds/bg-song.wav")
+bg_music = pygame.mixer.Sound("assets/sounds/bg-song.wav")
 
 # music
 channel_1.play(bg_music, -1)
